@@ -1,7 +1,7 @@
 provider "google" {
-  project     = "<YOUR PROJECT>"
-  region  = "<YOUR REGION>"
-  zone    = "<YOUR ZONE>"
+  project     = "sr-pr-3pmkt-teamhk-dev-np"
+  region  = "asia-south1"
+  zone    = "asia-south1-a"
   credentials = var.gcp-creds
 }
 
