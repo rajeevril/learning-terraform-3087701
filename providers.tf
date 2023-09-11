@@ -1,11 +1,11 @@
-terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-    }
-  }
+provider "google" {
+  project     = "<YOUR PROJECT>"
+  region  = "<YOUR REGION>"
+  zone    = "<YOUR ZONE>"
+  credentials = var.gcp-creds
 }
 
-provider "aws" {
-  region  = "us-west-2"
+
+variable "gcp-creds" {
+default= ""
 }
